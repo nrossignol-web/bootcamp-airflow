@@ -1,6 +1,5 @@
 from airflow.sdk import dag, Asset
 from airflow.operators.bash import BashOperator
-from airflow import asset
 from pendulum import datetime
 from datetime import timedelta
 import logging
