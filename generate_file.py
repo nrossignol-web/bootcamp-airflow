@@ -13,7 +13,7 @@ mon_fichier = Asset('file:///tmp/mon_asset.txt')
   catchup=False,
   tags=['producer'],
 )
-def producer();
+def producer():
 
   @task(outlet=[mon_fichier])
   def write_to_file(**context):
