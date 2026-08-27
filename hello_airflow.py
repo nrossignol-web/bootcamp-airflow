@@ -16,7 +16,7 @@ tags=['hello_airflow']
     tache2 = BashOperator(
         task_id="tache2",
         bash_command=""",
-        echo "Valeur print_hello depuis XCOM : { ti.xcom_pull(task_ids='print_hello') }
+        echo "Valeur print_hello depuis XCOM : { ti.xcom_pull(task_ids='print_hello') }"
         """,
     )
     
