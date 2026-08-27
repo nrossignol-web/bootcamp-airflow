@@ -9,7 +9,7 @@ with DAG(
     schedule_interval="@daily",
 catchup=False,
 tags=['hello_airflow']
-) as dag:
+):
 
     print_hello = BashOperator(
         task_id="print_hello",
