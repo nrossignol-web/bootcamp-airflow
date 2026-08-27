@@ -5,13 +5,13 @@ from pendulum import datetime
 from datetime import timedelta
 import logging
 
-mon_fichier = Asset("file:///tmp/mon_asset.txt")
+mon_fichier = Asset('file:///tmp/mon_asset.txt')
 
 @dag(
   start_date=datetime(2026,8,27, tz='UTC'),
   schedule=None,
   catchup=False,
-  tags=['producer']
+  tags=['producer'],
 )
 def producer();
 
