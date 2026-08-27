@@ -9,7 +9,6 @@ with DAG(
 catchup=False,
 tags=['hello_airflow']
 ):
-
     print_hello = BashOperator(
         task_id="print_hello",
         bash_command="echo 'Bonjour depuis Airflow'",
